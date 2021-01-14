@@ -1,5 +1,4 @@
 # I have chellanged myself not to use isdigit() function of string
-
 class Solution:
     def myAtoi(self, str: str) -> int:
         new = str.strip()
@@ -7,19 +6,16 @@ class Solution:
             return 0
         else:
             neg = False
-            
             if new[0] == "-":
                 neg = True
                 string = new.replace("-","",1)
             elif new[0] == "+":
                 string = new.replace("+", "",1)
             else:
-                string = new
-                
+                string = new   
             num = 0
             k = 0
             length = len(string) -1
-            
             for i, s in enumerate(string):
                 j = length - i
                 if s == ".":
@@ -45,24 +41,18 @@ class Solution:
                     num = num+(9*10**j)
                 elif s != "0":
                     k = len(string) - i
-                    break
-                    
+                    break        
             while (new[0] == "0"):
                 new = new.replace("0","", 1)
                 if len(new) < 1:
                     return 0
                     break
-
             if k>0:
-                num = round(num/(10**k))
-        
+                num = round(num/(10**k))        
             if neg == True:
-                num = 0-num
-                
+                num = 0-num              
             if num < -2**31:
-                num = -2**31
-            
+                num = -2**31          
             if num > (2**31)-1:
-                num = (2**31)-1
-        
+                num = (2**31)-1        
             return num    
