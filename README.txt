@@ -5,4 +5,5 @@ Two Sum beats 98.65% of submissions in memory efficiency
 Single Number beats 98.38% of submissions in memory efficiency
 Pow beats 99.36% of submissions in memory efficiency
 First Missing Positive beats 96.47% of submissions in runtime efficiency
+Fibonacci Numer beats 95.83% of submissions in runtime efficiency
 Longest Substring beats 93.39% of submissions in memory efficiency
